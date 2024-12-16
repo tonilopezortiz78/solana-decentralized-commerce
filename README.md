@@ -1,7 +1,3 @@
-Here’s an improved and polished version of your README for your GitHub repository:
-
----
-
 # Solana Decentralized Commerce
 
 **A C2B (Customer-to-Business) Payment Library for the Solana Blockchain**
@@ -100,7 +96,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 
 This library is provided **"as is"** without any warranties or guarantees of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. The authors and contributors shall not be liable for any damages arising from the use of this software, including but not limited to direct, indirect, incidental, special, or consequential damages (e.g., loss of data or profits), even if advised of the possibility of such damages.
 
----
-
-Feel free to modify this further to suit your specific goals or add additional sections (e.g., FAQs, contribution guidelines). Let me know if you'd like help with any additional documentation or features!
 
