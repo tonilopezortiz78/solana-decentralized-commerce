@@ -1,0 +1,70 @@
+==========================
+      16/12/2024
+==========================
+
+CREATE WALLET FUNCTION:
+
+- createWalletForCustomer(customerId)
+
+input : customerId
+
+output : public key and private key and customerId
+
+Save it encripted in a file with customer in json format, to reused the wallet and user in other fucntion or not encrypted   ?
+
+lets keep it simple for now, and we can add more features later
+
+now create a funcion to save new wallet with user or create a new wallet every time?
+
+keep it simple for now, and we can add more features later
+
+=======================================================================================================================================
+
+DEVNET AIRDROP FUNCTION:
+
+- airdrop_sol_devnet(publicKey)
+or
+- airdrop_basic(publicKey)
+
+input : public key
+
+output : success or error and balance?
+
+doubts can be an airdrop function for each network?, what we want here is airdrop of solana in devnet.
+
+lets do simple devnet_airdrop_solana function
+
+now we can see how save the wallet and user in a file and reuse it in other functions, to make it simple just we can save it in the json file and user can copy paste.
+
+
+we try to ask user for customerId , but there is the punycode problem error jjthat don't leet see really the questions for the customerId input, so we can fix the issue by downgrading node
+or just give extra espaces make make it more clear the question.
+
+
+issue: 
+console.log after node src/index.js
+
+==========================
+  CREATE NEW WALLET  
+==========================
+
+Please enter the customer name: 
+
+
+==========================
+(node:22552) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+user_name (this should be the inputs)
+Wallet Created:
+{
+  customerId: 'tony',
+  publicKey: 'HtM7BQCMsp3PQAVWR7R6aanj8FJUB4oykCsexxCWvjew',
+  privateKey: 'uYsbT9Uwmcsb5jnIDm7rArE0DW4kBMDEPRnitRucS2T64li8L/CaaCASaMfqzow+Uef53LAtfUf5Od6BMVGZuA=='
+}
+Wallet saved to file at path: /home/tony/software/solana/solana-decentralized-commerce/src/customer_wallets.json
+
+
+PROBLEM ;
+The punycode error is the in middle of the input for the user customerId name.
+
+fix it with spaces or  downgrade node to nvm 20.10.0
