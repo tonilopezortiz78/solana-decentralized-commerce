@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Import the createWalletForCustomer function from wallet.js
-const { createWalletForCustomer } = require("./wallet");
+const { createWalletForCustomer } = require("../lib/wallet");
 
 // Immediately Invoked Function Expression (IIFE) to handle asynchronous code
 (async () => {
@@ -40,7 +40,7 @@ const { createWalletForCustomer } = require("./wallet");
 
 function appendToFile(filename, data) {
   const path = require("path");
-  const filePath = path.join(__dirname, filename);
+  const filePath = path.join(__dirname, "../data", filename);
   fs.appendFileSync(filePath, JSON.stringify(data) + "\n");
   console.log("Wallet saved to file at path:", filePath);
 }

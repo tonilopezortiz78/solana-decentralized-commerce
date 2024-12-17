@@ -68,3 +68,16 @@ PROBLEM ;
 The punycode error is the in middle of the input for the user customerId name.
 
 fix it with spaces or  downgrade node to nvm 20.10.0
+
+===============
+17/12/2024
+===============
+
+airdrop_sol_devnet(publicKey, amount) 
+
+input: publicKey, amount
+
+output: success or error and balance?
+
+we have and issue, the devnet airdrop is limited for 2 airdrops per hour???
+
