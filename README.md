@@ -6,6 +6,12 @@ This repository provides a library to facilitate secure, seamless, and decentral
 
 ---
 
+## Webapp Playground
+
+Explore our interactive webapp playground to see the library in action. The playground allows you to create wallets, make transactions, and verify payments in a simulated environment.
+
+![Webapp Playground](docs/playground_screenshot.png)
+
 ## check docs folder to see how to use the library
 
 ---
